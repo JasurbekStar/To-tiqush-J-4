@@ -7,8 +7,9 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.filters import Command
 from aiogram.types import Message
-
-API = "8518648084:AAHorbcdwWGBbTqEBjlZGVGOK2dmN1PICxQ"
+from dotenv import load_dotenv
+load_dotenv()
+API = os.getenv("API")
 
 dp = Dispatcher()
 @dp.message(Command('start'))
