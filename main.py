@@ -1,6 +1,6 @@
 import asyncio
 import logging
-import sys
+import sys,os
 
 from aiogram import Bot, Dispatcher, html
 from aiogram.client.default import DefaultBotProperties
